@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="$(ProjectDir)..\..\Common.Configurations.targets" />
+
+  <ItemGroup>
+    <Compile Remove="Commands\File\EditFilesCommand.cs" />
+    <Compile Remove="Commands\File\Interfaces\IEditFilesCommand.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GroupService.Broker\GroupService.Broker.csproj" />
+    <ProjectReference Include="..\GroupService.Data\GroupService.Data.csproj" />
+    <ProjectReference Include="..\GroupService.Mappers\GroupService.Mappers.csproj" />
+    <ProjectReference Include="..\GroupService.Validation\GroupService.Validation.csproj" />
+  </ItemGroup>
+
+</Project>
