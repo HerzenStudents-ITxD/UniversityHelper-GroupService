@@ -20,23 +20,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Broker", "src\GroupService.Broker\GroupService.Broker.csproj", "{15D80B44-6194-4E84-BD54-4E139684EB33}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Broker", "src\GroupService.Broker\GroupService.Broker.csproj", "{15D80B44-6194-4E84-BD54-4E139684EB33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Business", "src\GroupService.Business\GroupService.Business.csproj", "{D9661109-F585-4FBF-81F6-424FE851643D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Business", "src\GroupService.Business\GroupService.Business.csproj", "{D9661109-F585-4FBF-81F6-424FE851643D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Data", "src\GroupService.Data\GroupService.Data.csproj", "{C6F9261D-C3BE-4BBD-B334-1D61293D2D1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Data", "src\GroupService.Data\GroupService.Data.csproj", "{C6F9261D-C3BE-4BBD-B334-1D61293D2D1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Data.Provider", "src\GroupService.Data.Provider\GroupService.Data.Provider.csproj", "{E84595A5-0B59-4DE0-B8BC-BFBC7D6A85D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Data.Provider", "src\GroupService.Data.Provider\GroupService.Data.Provider.csproj", "{E84595A5-0B59-4DE0-B8BC-BFBC7D6A85D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Data.Provider.MsSql.Ef", "src\GroupService.Data.Provider.MsSql.Ef\GroupService.Data.Provider.MsSql.Ef.csproj", "{9F4CF09B-E86D-4B1D-8D62-6F6F7A6F72D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Data.Provider.MsSql.Ef", "src\GroupService.Data.Provider.MsSql.Ef\GroupService.Data.Provider.MsSql.Ef.csproj", "{9F4CF09B-E86D-4B1D-8D62-6F6F7A6F72D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Mappers", "src\GroupService.Mappers\GroupService.Mappers.csproj", "{BFC3F5DD-E303-48C4-9FE5-AF06460177F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Mappers", "src\GroupService.Mappers\GroupService.Mappers.csproj", "{BFC3F5DD-E303-48C4-9FE5-AF06460177F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Models.Db", "src\GroupService.Models.Db\GroupService.Models.Db.csproj", "{F8D5AF55-AEFD-4155-9423-1E4B0F823F8F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Models.Db", "src\GroupService.Models.Db\GroupService.Models.Db.csproj", "{F8D5AF55-AEFD-4155-9423-1E4B0F823F8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Models.Dto", "src\GroupService.Models.Dto\GroupService.Models.Dto.csproj", "{FEB6FB94-29CA-4450-BE7A-7F2770766E25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Models.Dto", "src\GroupService.Models.Dto\GroupService.Models.Dto.csproj", "{FEB6FB94-29CA-4450-BE7A-7F2770766E25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupService.Validators", "src\GroupService.Validators\GroupService.Validators.csproj", "{51A7FF9F-9687-4299-B6A8-603FF7963B21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GroupService.Validation", "src\GroupService.Validators\GroupService.Validation.csproj", "{51A7FF9F-9687-4299-B6A8-603FF7963B21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

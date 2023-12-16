@@ -1,12 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <Import Project="$(ProjectDir)..\..\Common.Configurations.targets" />
 
   <ItemGroup>
     <ProjectReference Include="..\GroupService.Broker\GroupService.Broker.csproj" />
     <ProjectReference Include="..\GroupService.Data\GroupService.Data.csproj" />
-    <ProjectReference Include="..\GroupService.Mappers\GroupService.Mappers.csproj" />
-    <ProjectReference Include="..\GroupService.Validation\GroupService.Validation.csproj" />
+    <ProjectReference Include="..\GroupService.Models.Dto\GroupService.Models.Dto.csproj" />
   </ItemGroup>
 
-</Project>
+GroupGroupGroupGroupGroupGroup</Project>

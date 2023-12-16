@@ -20,4 +20,4 @@ COPY --from=build /root/.dotnet/corefx/cryptography/x509stores/my/* /root/.dotne
 #RUN dotnet dev-certs https
 #RUN dotnet dev-certs https --trust
 
-ENTRYPOINT ["dotnet", "UniversityHelper.UserService.dll"]
+ENTRYPOINT ["dotnet", "UniversityHelper.GroupService.dll"]
