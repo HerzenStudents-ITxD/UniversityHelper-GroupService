@@ -3,12 +3,8 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
 # Copy project files and restore dependencies
-COPY *.sln ./
-COPY *.csproj ./
-RUN dotnet restore --no-cache --source https://api.nuget.org/v3/index.json
-
-# Copy remaining files
 COPY . ./
+RUN dotnet restore --no-cache --source https://api.nuget.org/v3/index.json
 
 # Build and publish the application
 RUN dotnet publish -c Release -o out
