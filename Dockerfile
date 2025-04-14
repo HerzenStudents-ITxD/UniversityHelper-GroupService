@@ -1,23 +1,28 @@
-FROM mcr.microsoft.com/dotnet/sdk:7.0-bullseye-slim AS build
+# Build Stage
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 WORKDIR /app
 
-COPY . ./
-RUN dotnet restore -s https://api.nuget.org/v3/index.json
+# Copy project files and restore dependencies
+COPY *.sln ./
+COPY *.csproj ./
+RUN dotnet restore --no-cache --source https://api.nuget.org/v3/index.json
 
+# Copy remaining files
 COPY . ./
-RUN dotnet dev-certs https
-#RUN dotnet dev-certs https --trust
+
+# Build and publish the application
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0-bullseye-slim AS base
+# Runtime Stage
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
+
+# Copy the published output from the build stage
 COPY --from=build /app/out .
+
+# Expose ports for HTTP and HTTPS
 EXPOSE 80
 EXPOSE 443
-ENV PATH="${PATH}:/usr/bin/dotnet"
 
-COPY --from=build /root/.dotnet/corefx/cryptography/x509stores/my/* /root/.dotnet/corefx/cryptography/x509stores/my/
-#RUN dotnet dev-certs https
-#RUN dotnet dev-certs https --trust
-
+# Entry point for the application
 ENTRYPOINT ["dotnet", "UniversityHelper.GroupService.dll"]
